@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- device trees -->
+  <project name="moto-sm8550/android_device_motorola_sm8550-common" path="device/motorola/sm8550-common" remote="github" revision="lineage-20"/>
+  <project name="moto-sm8550/android_device_motorola_rtwo" path="device/motorola/rtwo" remote="github" revision="lineage-20"/>
+
+  <!-- kernel -->
+  <project name="moto-sm8550/android_kernel_motorola_sm8550" path="kernel/motorola/sm8550" remote="github" revision="prebuilt/lineage-20"/>
+
+  <!-- vendor -->
+  <project name="moto-sm8550/proprietary_vendor_motorola_sm8550-common" path="vendor/motorola/sm8550-common" remote="gitlab" revision="lineage-20"/>
+  <project name="moto-sm8550/proprietary_vendor_motorola_rtwo" path="vendor/motorola/rtwo" remote="gitlab" revision="lineage-20"/>
+</manifest>
