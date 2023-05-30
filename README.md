@@ -19,6 +19,7 @@ Starting from zero:
     curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-20/motorola-sm8550.xml > .repo/local_manifests/motorola-sm8550.xml
     curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-20/gitlab.xml > .repo/local_manifests/gitlab.xml
     curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-20/hals-sm8550.xml > .repo/local_manifests/hals-sm8550.xml
+    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-20/picks.sh > .repo/local_manifests/picks.sh
     repo sync
 
 If you've already synced Lineage-Sources:
@@ -29,7 +30,14 @@ If you've already synced Lineage-Sources:
     curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-20/motorola-sm8550.xml > .repo/local_manifests/motorola-sm8550.xml
     curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-20/gitlab.xml > .repo/local_manifests/gitlab.xml
     curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-20/hals-sm8550.xml > .repo/local_manifests/hals-sm8550.xml
+    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-20/picks.sh > .repo/local_manifests/picks.sh
     repo sync
+
+Repopick
+----------
+    cd ~/android/lineage-20
+    chmod +x picks.sh
+    ./picks.sh
 
 Building
 ----------
