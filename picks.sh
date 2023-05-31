@@ -20,3 +20,9 @@ repopick 356757 # Power : Modify camera open/close tunings
 repopick 356760 # Add 120/240 FPS UCs power hint tuning parameter
 repopick 356758 # Power: ZSL preview Silver capped from 729MHz to 825MHz
 repopick 356759 # Optimization silver core residency for camcorder UCs
+
+# from topic 13-taro
+# https://review.lineageos.org/q/topic:%2213-taro%22
+
+# android_vendor_lineage
+repopick 355943 # st-hal: add TARGET_USES_QCOM_AUDIO_AR guard
