@@ -3,11 +3,12 @@
 # Original script by Nvertigo https://github.com/nvertigo/local_manifest
 
 # if you want to build without using ccache, comment
-# the next 3 lines
+# the next 5 lines
 #export USE_CCACHE=1
+#export CCACHE_DIR=~/mnt/.ccache
+#export CCACHE_MAX_SIZE=500G
 #export CCACHE_EXEC=$(which ccache)
-#export CCACHE_DIR=/mnt/ccache
-#ccache -M 300G
+#ccache -M $CCACHE_MAX_SIZE
 
 # we want all compiler messages in English
 export LANGUAGE=C
@@ -17,9 +18,9 @@ source build/envsetup.sh
 
 # clean the out dir; comment out, if you want to do
 # a dirty build
-breakfast lineage_rtwo-ap1a-userdebug
+breakfast lineage_rtwo-bp1a-userdebug
 make -j9 ARCH=arm clean
 
 # fire up the building process and also log stdout
 # and stderrout
-brunch lineage_rtwo-ap1a-userdebug 2>&1 | tee rtwo_make.log
+brunch lineage_rtwo-bp1a-userdebug 2>&1 | tee rtwo_make.log
