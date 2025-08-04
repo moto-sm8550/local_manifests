@@ -8,27 +8,27 @@ Also please note that repopick.sh isn't always updated. Please check LineageOS G
 
 Starting from zero:
 ---------
-    # cd into your ROM's folder (IE, from scratch I would mkdir -p ~/android/lineage-22.2 && cd ~/android/lineage-22.2)
-    repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs
+    # cd into your ROM's folder (IE, from scratch I would mkdir -p ~/android/lineage-23.0 && cd ~/android/lineage-23.0)
+    repo init -u https://github.com/LineageOS/android.git -b lineage-23.0 --git-lfs
     mkdir -p .repo/local_manifests
-    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-22.2/extras.xml > .repo/local_manifests/extras.xml
-    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-22.2/motorola-common.xml > .repo/local_manifests/motorola-common.xml
-    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-22.2/motorola-sm8550.xml > .repo/local_manifests/motorola-sm8550.xml
+    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-23.0/extras.xml > .repo/local_manifests/extras.xml
+    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-23.0/motorola-common.xml > .repo/local_manifests/motorola-common.xml
+    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-23.0/motorola-sm8550.xml > .repo/local_manifests/motorola-sm8550.xml
     repo sync
 
 If you've already synced Lineage-Sources:
 ----------
     # cd into your ROM's folder
     mkdir -p .repo/local_manifests
-    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-22.2/extras.xml > .repo/local_manifests/extras.xml
-    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-22.2/motorola-common.xml > .repo/local_manifests/motorola-common.xml
-    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-22.2/motorola-sm8550.xml > .repo/local_manifests/motorola-sm8550.xml
+    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-23.0/extras.xml > .repo/local_manifests/extras.xml
+    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-23.0/motorola-common.xml > .repo/local_manifests/motorola-common.xml
+    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-23.0/motorola-sm8550.xml > .repo/local_manifests/motorola-sm8550.xml
 
 Building
 ----------
     # cd into your ROM's folder
-    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-22.2/rtwo_clean_build.sh > rtwo_clean_build.sh
-    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-22.2/rtwo_dirty_build.sh > rtwo_dirty_build.sh
+    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-23.0/rtwo_clean_build.sh > rtwo_clean_build.sh
+    curl https://raw.githubusercontent.com/moto-sm8550/local_manifests/lineage-23.0/rtwo_dirty_build.sh > rtwo_dirty_build.sh
     ./rtwo_clean_build.sh // for rtwo clean builds
     ./rtwo_dirty_build.sh // for rtwo dirty builds
 
