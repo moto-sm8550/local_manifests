@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- device trees -->
-  <project name="LineageOS/android_device_motorola_sm8550-common" path="device/motorola/sm8550-common" remote="github" revision="lineage-23.2"/>
-  <project name="LineageOS/android_device_motorola_rtwo" path="device/motorola/rtwo" remote="github" revision="lineage-23.2"/>
+  <project name="LineageOS/android_device_motorola_sm8550-common" path="device/motorola/sm8550-common" remote="github" revision="lineage-24.0"/>
+  <project name="LineageOS/android_device_motorola_rtwo" path="device/motorola/rtwo" remote="github" revision="lineage-24.0"/>
 
   <!-- kernel -->
-  <project name="LineageOS/android_kernel_motorola_sm8550" path="kernel/motorola/sm8550" remote="github" revision="lineage-23.2"/>
-  <project name="LineageOS/android_kernel_motorola_sm8550-devicetrees" path="kernel/motorola/sm8550-devicetrees" remote="github" revision="lineage-23.2"/>
-  <project name="LineageOS/android_kernel_motorola_sm8550-modules" path="kernel/motorola/sm8550-modules" remote="github" revision="lineage-23.2"/>
+  <project name="LineageOS/android_kernel_motorola_sm8550" path="kernel/motorola/sm8550" remote="github" revision="lineage-24.0"/>
+  <project name="LineageOS/android_kernel_motorola_sm8550-devicetrees" path="kernel/motorola/sm8550-devicetrees" remote="github" revision="lineage-24.0"/>
+  <project name="LineageOS/android_kernel_motorola_sm8550-modules" path="kernel/motorola/sm8550-modules" remote="github" revision="lineage-24.0"/>
 
   <!-- vendor -->
-  <project name="TheMuppets/proprietary_vendor_motorola_sm8550-common" path="vendor/motorola/sm8550-common" remote="github" revision="lineage-23.2"/>
-  <project name="TheMuppets/proprietary_vendor_motorola_rtwo" path="vendor/motorola/rtwo" remote="github" revision="lineage-23.2"/>
+  <project name="TheMuppets/proprietary_vendor_motorola_sm8550-common" path="vendor/motorola/sm8550-common" remote="github" revision="lineage-24.0"/>
+  <project name="TheMuppets/proprietary_vendor_motorola_rtwo" path="vendor/motorola/rtwo" remote="github" revision="lineage-24.0"/>
 </manifest>

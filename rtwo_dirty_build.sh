@@ -15,7 +15,8 @@ export LANGUAGE=C
 
 # set up the environment (variables and functions)
 source build/envsetup.sh
-breakfast lineage_rtwo-bp4a-userdebug
+export SOONG_NINJA=ninja
+breakfast lineage_rtwo-cp2a-userdebug
 
 # clean build
 # make clean
@@ -25,4 +26,4 @@ make installclean
 
 # fire up the building process and also log stdout
 # and stderrout
-brunch lineage_rtwo-bp4a-userdebug 2>&1 | tee rtwo_make.log
+brunch lineage_rtwo-cp2a-userdebug 2>&1 | tee rtwo_make.log
